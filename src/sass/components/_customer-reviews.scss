@@ -1,0 +1,102 @@
+}
+.reviews__wrap{
+    padding: 0 ;
+}
+.reviews {
+  outline: 1px solid red;
+  padding: 0 20px;
+}
+
+.reviews__img {
+  background-color: aqua;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 29px;
+}
+.reviews__text::before {
+  position: relative;
+  top: 7px;
+  left: 23px;
+  z-index: -1;
+  content: "";
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  background-size: contain;
+  background-image: url(../img/before2.svg);
+}
+.reviews__text {
+  z-index: 1;
+  position: relative;
+  background-color: #fafafa;
+  color: #000;
+
+ background: linear-gradient(to bottom,rgba(0,0,0,0) 0,#000000 100%);
+     background-repeat: repeat-x;
+     background-position: 0 100%;
+     background-size: 1px 1px;
+  
+    
+
+  padding: 43px 66px 26px 57px;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+
+  margin-bottom: 50px;
+}
+
+.reviews__title {
+  position: relative;
+  color: #000000;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  margin-bottom: 20px;
+
+
+}
+
+.reviews__dot{
+  display: block;
+align-items: center;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: red;  
+}
+.reviews__dot::before,
+.reviews__dot::after {
+content: '';
+display: block;
+align-items: center;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: red;
+
+} 
+.reviews__dot{
+  
+    display: flex;
+    margin: 0 auto 18px;
+
+}
+
+
+
+.reviews__wrap .slick-dots li.slick-active button:before {
+  color: red;
+}
+.reviews__wrap .slick-dots{
+    position: relative;
+    top: 0px;
+   
+}
