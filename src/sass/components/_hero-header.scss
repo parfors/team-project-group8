@@ -10,40 +10,96 @@
   position: relative;
   height: 502px;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header__logo {
 }
-.header__button-burger {
-  display: block;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-}
-.header__icon-burger {
-}
-.menu__mobile {
+
+.header__nav {
   display: none;
-}
-.hero__title {
-}
-.hero__title-another-color {
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
 }
 .nav-list {
+  display: flex;
 }
 .nav-list__item {
 }
 .nav-list__link {
 }
+
+.header__button-burger {
+  display: none;
+
+  @media screen and (max-width: 1279px) {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+.header__icon-burger {
+}
+
+.hero__button {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.menu__mobile {
+  display: none;
+}
+
+.hero__title-wrap {
+  position: relative;
+  z-index: 2;
+}
+.hero__title {
+}
+.hero__title-another-color {
+}
+.anchor-list {
+}
+.anchor-list__item {
+}
+.anchor-list__link {
+}
+
+.hero__stores-wrap {
+}
+.stores-list {
+}
+.stores-list__item {
+}
+.stores-list__number {
+}
+.stores-list__text {
+}
+.circle {
+}
+
+.hero__text {
+}
+.hero__link {
+}
+
 .hero__img-ellipse {
   position: absolute;
   top: 83px;
   left: 36px;
   width: 346px;
   height: 344px;
+  z-index: 1;
 }
 .hero__img-icecream {
   position: absolute;
@@ -51,4 +107,5 @@
   left: 117px;
   width: 171px;
   height: 410px;
+  z-index: 1;
 }
