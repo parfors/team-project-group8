@@ -1,5 +1,7 @@
 .section__hero {
+  position: relative;
   background-color: #ffb8ca;
+  height: 502px;
 }
 
 .container {
@@ -33,6 +35,12 @@
 .nav-list__link {
 }
 .hero__img-ellipse {
+  position: fixed;
+  top: 83px;
+  left: 36px;
 }
 .hero__img-icecream {
+  position: fixed;
+  bottom: 0;
+  left: 117px;
 }
