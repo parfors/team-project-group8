@@ -1,10 +1,14 @@
-.section__hero {
-  position: relative;
-  background-color: #ffb8ca;
-  height: 502px;
+.section__hero * {
+  outline: 1px solid tomato;
 }
 
-.container {
+.section__hero {
+  background-color: #ffb8ca;
+}
+
+.container__hero {
+  position: relative;
+  height: 502px;
 }
 .header {
   display: flex;
@@ -35,12 +39,16 @@
 .nav-list__link {
 }
 .hero__img-ellipse {
-  position: fixed;
+  position: absolute;
   top: 83px;
   left: 36px;
+  width: 346px;
+  height: 344px;
 }
 .hero__img-icecream {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 117px;
+  width: 171px;
+  height: 410px;
 }
