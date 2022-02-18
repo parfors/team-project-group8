@@ -33,9 +33,9 @@ text-align: center;
   color: #e1e1e1;
   font-size: 150px;
   display: inline-block;
-}
-}
-
+  }
+  }
+  
 .reviews__title {
   position: relative;
   color: #000000;
@@ -57,7 +57,7 @@ text-align: center;
 .reviews__wrap .slick-dots li.slick-active button:before {
   color: #c7133e;
 }
-.reviews__wrap .slick-dots {
+  .reviews__wrap .slick-dots {
   position: relative;
   top: 0px;
 }
