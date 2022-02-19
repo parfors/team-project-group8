@@ -8,16 +8,21 @@
 
 .container__hero {
   position: relative;
-  height: 502px;
+  overflow: hidden;
+  padding-top: 6px;
+  padding-bottom: 160px;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 137px;
 }
 
 .header__logo {
+  width: 199px;
+  height: 50px;
 }
 
 .header__nav {
@@ -40,6 +45,7 @@
 
   @media screen and (max-width: 1279px) {
     display: block;
+    margin-left: auto;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
@@ -65,17 +71,59 @@
   z-index: 2;
 }
 .hero__title {
+  max-width: 218px;
+  margin-bottom: 19px;
+
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 0.965;
+
+  text-transform: uppercase;
+  color: #d41443;
 }
 .hero__title-another-color {
+  display: block;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+
+  color: #ffffff;
 }
 .anchor-list {
+  display: flex;
 }
 .anchor-list__item {
+  &:first-child {
+    margin-right: 8px;
+  }
 }
 .anchor-list__link {
+  width: 61.2px;
+  height: 24px;
+
+  font-family: DM Sans;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #d41443;
+  border-radius: 20px;
+}
+
+.anchor-list__link--another-color {
+  width: 82.8px;
+  color: #d41443;
+  background-color: #ffffff;
 }
 
 .hero__stores-wrap {
+  display: none;
 }
 .stores-list {
 }
@@ -89,23 +137,43 @@
 }
 
 .hero__text {
+  display: none;
 }
 .hero__link {
+  display: none;
 }
 
 .hero__img-ellipse {
   position: absolute;
-  top: 83px;
-  left: 36px;
+  top: 17%;
+  left: 11%;
   width: 346px;
   height: 344px;
   z-index: 1;
+  max-width: none;
 }
 .hero__img-icecream {
   position: absolute;
   bottom: 0;
-  left: 117px;
+  left: 37%;
   width: 171px;
   height: 410px;
   z-index: 1;
 }
+
+// .hero__img-ellipse {
+//   position: absolute;
+//   top: 83px;
+//   left: 36px;
+//   width: 346px;
+//   height: 344px;
+//   z-index: 1;
+// }
+// .hero__img-icecream {
+//   position: absolute;
+//   bottom: 0;
+//   left: 117px;
+//   width: 171px;
+//   height: 410px;
+//   z-index: 1;
+// }
