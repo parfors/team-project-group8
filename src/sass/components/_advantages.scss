@@ -1,0 +1,113 @@
+.section-advantage {
+  padding-bottom: 97px;
+
+  @include tablet {
+    padding-bottom: 140px;
+  }
+}
+
+.advantage {
+  margin-bottom: -30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -38px;
+  }
+}
+
+.advantage__item {
+  margin-bottom: 38px;
+
+  @include tablet {
+    flex-basis: calc(100% / 3 - 60px);
+    margin-left: 60px;
+    margin-bottom: 0;
+  }
+  @include desktop {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
+}
+
+.advantage__title {
+  margin-bottom: 13px;
+
+  font-family: var(--secondary-font-family);
+
+  @include font(36px, 400, 1.14, 0.04em);
+
+  color: var(--accent-color);
+
+  @include tablet {
+    @include font(48px, null, null, null);
+  }
+  @include desktop {
+    margin-bottom: 15px;
+    @include font(58px, null, null, null);
+  }
+}
+
+.advantage__text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.66;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
+.advantage__title--milk::before,
+.advantage__title--fruit::before,
+.advantage__title--health::before {
+  content: '';
+  display: block;
+  margin-bottom: 16px;
+
+  @include tablet {
+    margin-bottom: 36px;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+
+.advantage__title--milk::before {
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/img-adv/adv-icon-1-1x.png);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/img-adv/adv-icon-1-2x.png);
+  }
+}
+
+.advantage__title--fruit::before {
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/img-adv/adv-icon-2-1x.png);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/img-adv/adv-icon-2-2x.png);
+  }
+}
+
+.advantage__title--health::before {
+  width: 44px;
+  height: 50px;
+  background-image: url(../images/img-adv/adv-icon-3-1x.png);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/img-adv/adv-icon-3-2x.png);
+  }
+}
