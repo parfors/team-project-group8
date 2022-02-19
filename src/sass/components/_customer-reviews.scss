@@ -28,11 +28,16 @@
   margin-bottom: 29px;
 }
 .wrap-text {
-  background: repeating-linear-gradient(
+ background: repeating-linear-gradient(
+    to top,
     transparent 1px,
-    #fafafa 31px,
-    #e1e1e1 32px
+    transparent 26px,
+    
+    #E1E1E1 27px,
+     #E1E1E1 28px
+  
   );
+ 
 }
 .reviews__text::before {
   position: absolute;
