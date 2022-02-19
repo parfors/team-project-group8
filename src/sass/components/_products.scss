@@ -223,7 +223,7 @@
   .thumb__button:focus & {
     opacity: 1;
     transform: translateX(0);
-    padding: 15px;
+    padding: 25px;
   }
 }
 .overlay-text {
@@ -231,6 +231,6 @@
   font-size: 14px;
   line-height: 1.57;
   letter-spacing: 0.04em;
-  color: rgb(32%, 13%, 18%, 1);
+  color: rgb(23%, 18%, 19%, 1);
   text-align: left;
 }
