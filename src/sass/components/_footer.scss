@@ -11,6 +11,12 @@
 .footer {
 padding-bottom: 43px;
 background-color: #FFF5F6;
+@media screen and (min-width: 768px) {
+    padding-bottom: 18px;
+}
+@media screen and (min-width: 1280px) {
+    padding-bottom: 10px;
+}
 }
 
 a {
