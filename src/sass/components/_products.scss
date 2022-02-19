@@ -1,0 +1,94 @@
+.products__section {
+  background-color: #e5e5e5;
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+}
+.section__label {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.14;
+  }
+}
+.sectin__title {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 31px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.products__item {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #ffb8ca;
+  border-radius: 4px;
+  margin-top: 144px;
+  &::before {
+    position: absolute;
+    content: url('../images/products/img-mob-1-1x.png');
+    display: block;
+    width: 100%;
+    left: 0;
+    top: -100%;
+  }
+}
+// background-color: #c2e297;
+// content: url('../images/products/img-mob-3-1x.png');
+
+.item__title {
+  font-family: var(--secondary-font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primeri-text-color);
+  margin-top: 22px;
+}
+
+.item__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--primeri-text-color);
+  padding-left: 41px;
+  padding-right: 39px;
+}
