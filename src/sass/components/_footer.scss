@@ -1,0 +1,60 @@
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 43px;
+}
+
+.social__item {
+    margin-right: 30px;
+}
+
+.footer {
+padding-bottom: 43px;
+background-color: #FFF5F6;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.telephone {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 46px;
+    margin-right: 0px;
+    color: black;
+}
+
+.telephone__number {
+    color: var(--accent-color);
+
+}
+.end {
+    padding-top: 20px;
+    border-top: 1px solid #E1E1E1;
+    text-align: center;
+    margin-top: 65px;
+    color: grey;
+}
+
+.section__pretitle--position {
+    text-align: start;
+}
+.section__title--position {
+    text-align: start;
+}
+
+.section__title--padding {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container__footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
