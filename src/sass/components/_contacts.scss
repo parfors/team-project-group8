@@ -2,6 +2,12 @@
   // background: #fff5f6;
   padding-top: 0;
   background-image: linear-gradient(to bottom, #ffffff 84px, #fff5f6 84px);
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to bottom, #ffffff 78px, #fff5f6 78px);
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(to bottom, #ffffff 102px, #fff5f6 102px);
+  }
 }
 .is-hidden-position {
   position: absolute;
@@ -10,16 +16,7 @@
   padding-left: 50px;
   padding-right: 50px;
 }
-.locations-background {
-}
-.locations-wrap {
-  // background: #ffffff;
-  // box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  // border-radius: 24px;
-  // padding-left: 20px;
-  // padding-right: 20px;
-  // margin-bottom: 54px;
-}
+
 .locations__list {
   margin-bottom: 113px;
 }
@@ -59,6 +56,24 @@
   background: #f0d1a5;
   border-radius: 4px;
 }
+.locations-item-text__agency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+
+  text-transform: uppercase;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  background: #f0d1a5;
+  border-radius: 4px;
+}
+
 .locations-item-text__city {
   font-family: var(--primary-font-family);
   font-style: normal;
