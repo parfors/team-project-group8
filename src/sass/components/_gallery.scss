@@ -1,7 +1,11 @@
 .gallery {
   width: 100%;
   height: 122px;
-  background-color: linear-gradient(to bottom, var(--background-color) 50%, #e5e5e5 50%);
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-color) 50%,
+    var(--primeri-text-color) 50%
+  );
 
   @include tablet {
     height: 264px;
