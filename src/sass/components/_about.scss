@@ -65,6 +65,18 @@
 
     letter-spacing: 0.04em;
   }
+  //   &::before {
+  //     content: '';
+  //     background-image: url('../images/about/cow-mob-1x.png');
+  //     width: 280px;
+  //     height: 280px;
+  //   }
+  &::before {
+    content: url(' ../images/about/cow-mob-1x.png ');
+    display: block;
+    margin-bottom: 46px;
+    max-width: 280px;
+  }
 }
 
 .about__recipe {
@@ -96,7 +108,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  //   border: none;
+  border: none;
 
   color: var(--accent-color);
   background: var(--primeri-text-color);
@@ -104,4 +116,11 @@
 }
 .about__wrapper {
   margin: 0 50px;
+}
+.about-wrapper::before {
+  content: url(' ../images/about/cow-mob-1x.png ');
+  //   background-image: url('../images/about/cow-mob-1x.png');
+  width: 280px;
+  height: 280px;
+  z-index: 2;
 }
