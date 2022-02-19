@@ -49,12 +49,17 @@
 }
 
 .advantage__text {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.66;
-  letter-spacing: 0.04em;
+  @include font(12px, 700, 1.66, 0.02em);
 
   color: #000000;
+
+  @include tablet {
+    @include font(14px, null, 1.71, null);
+  }
+  @include desktop {
+    margin-bottom: 15px;
+    @include font(16px, null, 1.75, null);
+  }
 }
 
 .advantage__title--milk::before,
