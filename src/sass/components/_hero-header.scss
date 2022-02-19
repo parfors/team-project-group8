@@ -1,6 +1,6 @@
-.section__hero * {
-  outline: 1px solid tomato;
-}
+// .section__hero * {
+//   outline: 1px solid tomato;
+// }
 
 .section__hero {
   background-color: #ffb8ca;
@@ -34,27 +34,58 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 69px;
+    justify-content: flex-end;
   }
 }
 
 .header__logo {
   width: 199px;
   height: 50px;
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 38px;
+    left: 46px;
+  }
 }
 
 .header__nav {
-  display: none;
-
-  @media screen and (min-width: 1280px) {
-    display: block;
+  @media screen and (max-width: 1279px) {
+    display: none;
   }
 }
+
 .nav-list {
   display: flex;
 }
+
 .nav-list__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
 }
+
 .nav-list__link {
+  position: relative;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  z-index: 2;
+
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 }
 
 .header__button-burger {
@@ -84,6 +115,8 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,6 +133,18 @@
   border: none;
   background-color: #ffffff;
   cursor: pointer;
+
+  z-index: 2;
+
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 110px;
+  }
 }
 
 .hero__icon-buy {
@@ -184,7 +229,6 @@
   width: 61.2px;
   height: 24px;
 
-  font-family: DM Sans;
   font-weight: normal;
   font-size: 8px;
   line-height: 1.25;
@@ -192,10 +236,16 @@
   align-items: center;
   justify-content: center;
 
-  text-decoration: none;
   color: #ffffff;
   background-color: #d41443;
   border-radius: 20px;
+
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
 
   @media screen and (min-width: 1280px) {
     width: 104px;
@@ -210,6 +260,13 @@
   width: 82.8px;
   color: #d41443;
   background-color: #ffffff;
+
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 
   @media screen and (min-width: 1280px) {
     width: 138px;
@@ -235,6 +292,14 @@
 .hero__stores-wrap {
   @media screen and (max-width: 767px) {
     display: none;
+  }
+}
+
+.stores-list {
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    top: 0;
+    right: -18px;
   }
 }
 
@@ -329,6 +394,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 200px;
+    left: 180px;
   }
 }
 
