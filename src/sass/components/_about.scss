@@ -1,3 +1,26 @@
+.about-background {
+  background-image: url('../images/about/cow-mob-1x.png');
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 46px auto;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/about/cow-mob-2x.png');
+  }
+  @include tablet {
+    background-image: url('../images/about/cow-tab-1x.png');
+    width: 340px;
+    height: 340px;
+    margin: 0 17px 0 0;
+  }
+  @include desktop {
+    background-image: url('../images/about/cow-desk-1x.png');
+    width: 516px;
+    height: 516px;
+    margin: 0 74px 0 0;
+  }
+}
+
 .about {
   padding-top: 125px;
   padding-bottom: 39px;
@@ -21,7 +44,7 @@
     padding-top: 125px;
     padding-bottom: 146px;
     background-image: url('../images/about/about-desk-bg1x.png');
-    background-position: 0 50%;
+    background-position: 0 80%;
     background-repeat: no-repeat;
     background-size: 100%;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -38,13 +61,37 @@
   }
 }
 .about__title {
-  //   margin-bottom: 26px;
-  margin-bottom: 350px;
+  margin-bottom: 26px;
   @include tablet {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   @include desktop {
-    margin-bottom: 106px;
+    margin-bottom: 55px;
+  }
+}
+.about-thumb {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.about__wrapper {
+  margin: 0 50px;
+  @include tablet {
+    margin: 0;
+    width: 340px;
+    padding-top: 40px;
+  }
+  @include desktop {
+    margin: 0;
+    width: 463px;
+    padding-top: 50px;
   }
 }
 .about__description {
@@ -72,16 +119,16 @@
   //     width: 280px;
   //     height: 280px;
   //   }
-  position: relative;
-  &::before {
-    content: url(' ../images/about/cow-mob-1x.png ');
-    display: block;
-    margin-bottom: 46px;
-    max-width: 280px;
+  //   position: relative;
+  //   &::before {
+  //     content: url(' ../images/about/cow-mob-1x.png ');
+  //     display: block;
+  //     margin-bottom: 46px;
+  //     max-width: 280px;
 
-    position: absolute;
-    transform: translateX(-20%) translateY(-100%);
-  }
+  //     position: absolute;
+  //     transform: translateX(-20%) translateY(-100%);
+  //   }
 }
 
 .about__recipe {
@@ -133,7 +180,4 @@
   .about__button:hover & {
     fill: var(--primeri-text-color);
   }
-}
-.about__wrapper {
-  margin: 0 50px;
 }

@@ -41,6 +41,25 @@
   z-index: -1;
   display: inline-block;
   content: "";
+   padding: 43px 66px 26px 66px;
+  background-color: #fafafa;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    padding: 47px 64px 34px 64px;
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 47px 77px 39px 77px;
+    margin-bottom: 15px;
+  }
+}
+.reviews__text::before {
+  position: absolute;
+  top: -15px;
+  left: -2px;
+  z-index: -1;
+  display: inline-block;
+  content: '';
   background-image: url(../images/customer-reviews/pic.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -51,14 +70,31 @@
     left: 39px;
   }
  
+    top: -17px;
+    left: -26px;
+  
+   @media screen and (min-width: 1280px) {
+    top: -15px;
+    left: -26px;
+  }
 }
 .reviews__text {
   position: relative;
   z-index: 1;
 
+  background: repeating-linear-gradient(
+    to top,
+    transparent 1px,
+    transparent 30px,
+    #e1e1e1 31px,
+    #e1e1e1 32px
+  );
+
   text-align: center;
-  padding: 43px 66px 26px 66px;
-  margin-bottom: 30px;
+
+  color: #000;
+  background-color: #fafafa;
+
 
   color: #000;
   background-color: #fafafa;
@@ -67,38 +103,42 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
-    @media screen and (min-width: 768px) {
-      font-size: 14px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
     line-height: 2.16;
     letter-spacing: 0.04em;
-    padding: 47px 80px 34px 80px;
-    margin-bottom: 24px;
   }
   @media screen and (min-width: 1280px) {
-      font-size: 16px;
+    font-size: 16px;
     line-height: 1.86;
-    padding: 47px 89px 39px 87px;
-    margin-bottom: 15px;
+
   }
 }
 .reviews__title {
   position: relative;
   color: #000000;
 
-  font-family: "DM Sans", sans-serif;
+
+  font-family: 'DM Sans', sans-serif;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
   margin-bottom: 30px;
   text-align: center;
 
-   @media screen and (min-width: 768px) {
-  margin-bottom: 35px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35px;
+
   }
 }
 
 .reviews__title::before {
-  content: "\2022   \2022   \2022";
+
+  content: '\2022   \2022   \2022';
+
   display: flex;
   justify-content: center;
   font-size: 10px;
@@ -106,15 +146,7 @@
   color: #c7133e;
   margin-bottom: 18px;
 
-    @media screen and (min-width: 768px) {
-  margin-bottom: 14px;
-    }
-    @media screen and (min-width: 1280px) {
-  margin-bottom: 15px;
-  
-}
-}
-// =================================================
+
 .reviews__wrap .slick-dots li.slick-active button {
   background-image: url(../images/customer-reviews/home.svg);
   background-size: cover;
@@ -122,6 +154,23 @@
   background-color: transparent;
   border-radius: 0;
 }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+// =====================стили точек панигации============================
+.reviews__wrap .slick-dots li.slick-active button {
+  background-image: url(../images/customer-reviews/home.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-radius: 0;
+}
+
 .reviews__wrap .slick-dots {
   position: relative;
   top: 0px;
@@ -129,6 +178,11 @@
 .reviews__wrap .slick-dots li {
   padding: 0;
   margin: 0;
+  width: 12px;
+  height: 12px;
+}
+.reviews__wrap .slick-dots li:not(:last-child) {
+  margin-right: 18px;
 }
 .reviews__wrap .slick-dots li button:before {
   display: none;
