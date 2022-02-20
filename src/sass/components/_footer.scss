@@ -36,6 +36,12 @@ ul {
     margin-top: 46px;
     margin-right: 0px;
     color: black;
+    @media screen and (min-width: 768px) {
+        font-weight: 700;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.02em;
+    }
 }
 
 .telephone__number {
@@ -50,18 +56,50 @@ ul {
     color: grey;
 }
 
+.section__pretitle {
+font-weight: 400;
+font-size: 30px;
+line-height: 1.13;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFA5BA;
+}
+
 .section__pretitle--position {
     text-align: start;
 }
+
+.section__title {
+font-weight: 400;
+font-size: 58px;
+line-height: 1.13;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: #D41443;
+}
+
 .section__title--position {
     text-align: start;
 }
 
 .section__title--padding {
     margin-bottom: 43px;
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+    }
 }
 
 .container__footer {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.section {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
 }
