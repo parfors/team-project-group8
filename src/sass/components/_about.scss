@@ -1,0 +1,167 @@
+.about-background {
+  background-image: url('../images/about/cow-mob-1x.png');
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 46px auto;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/about/cow-mob-2x.png');
+  }
+  @include tablet {
+    background-image: url('../images/about/cow-tab-1x.png');
+    width: 340px;
+    height: 340px;
+    margin: 0 17px 0 0;
+  }
+  @include desktop {
+    background-image: url('../images/about/cow-desk-1x.png');
+    width: 516px;
+    height: 516px;
+    margin: 0 74px 0 0;
+  }
+}
+
+.about {
+  padding-top: 125px;
+  padding-bottom: 39px;
+  background-color: var(--background-color);
+
+  @media screen and(max-width: 767px) {
+    background-image: url('../images/about/about-mob-bg1x.png');
+    background-position: 0 85%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about/about-mob-bg2x.png');
+    }
+  }
+
+  @include tablet {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  @include desktop {
+    padding-top: 125px;
+    padding-bottom: 146px;
+    background-image: url('../images/about/about-desk-bg1x.png');
+    background-position: 0 80%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about/about-desk-bg2x.png');
+    }
+  }
+}
+.about__pretitle {
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 130px;
+    margin-bottom: 16px;
+  }
+}
+.about__title {
+  margin-bottom: 26px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    margin-bottom: 55px;
+  }
+}
+.about-thumb {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.about__wrapper {
+  margin: 0 50px;
+  @include tablet {
+    margin: 0;
+    width: 340px;
+    padding-top: 40px;
+  }
+  @include desktop {
+    margin: 0;
+    width: 463px;
+    padding-top: 50px;
+  }
+}
+.about__description {
+  margin-bottom: 47px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+
+  color: #000000;
+  @include tablet {
+    margin-bottom: 49px;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @include desktop {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.76;
+
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__recipe {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #907e82;
+
+  @include tablet {
+    margin-bottom: 62px;
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    margin-bottom: 45px;
+    line-height: 1.94;
+  }
+}
+.about__button {
+  min-height: 44px;
+  min-width: 176px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+
+  color: var(--accent-color);
+  background: var(--primeri-text-color);
+  border-radius: 22px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--primeri-text-color);
+    background-color: var(--accent-color);
+  }
+}
+.about__icon {
+  margin-left: 15px;
+  fill: var(--accent-color);
+  .about__button:hover & {
+    fill: var(--primeri-text-color);
+  }
+}
