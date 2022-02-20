@@ -16,6 +16,7 @@
       background-image: url('../images/about/cow-tab-2x.png');
     }
   }
+
   @include desktop {
     background-image: url('../images/about/cow-desk-1x.png');
     width: 516px;
