@@ -1,5 +1,9 @@
-.section__hero * {
-  outline: 1px solid tomato;
+// .section__hero * {
+//   outline: 1px solid tomato;
+// }
+
+html {
+  scroll-behavior: smooth;
 }
 
 .section__hero {
@@ -527,7 +531,7 @@
   right: 34px;
   width: 168px;
   height: 133px;
-  z-index: 1;
+  z-index: 2;
 
   @media screen and (min-width: 1280px) {
     bottom: 0;
@@ -602,12 +606,6 @@
   @media screen and (min-width: 768px) {
     width: 186px;
   }
-}
-
-.navigation {
-}
-
-.nav-mob {
 }
 
 .nav-mob__item {
