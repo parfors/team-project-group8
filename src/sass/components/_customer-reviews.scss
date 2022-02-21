@@ -19,7 +19,6 @@
   }
 }
 .reviews__img {
-  background-color: aqua;
   width: 85px;
   height: 85px;
   border-radius: 50%;
@@ -124,31 +123,31 @@
   }
 }
 // =====================стили точек панигации============================
-.reviews__wrap .slick-dots li.slick-active button {
+.slick-dots li.slick-active button {
   background-image: url(../images/customer-reviews/home.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: transparent;
   border-radius: 0;
 }
-.reviews__wrap .slick-dots {
+.slick-dots {
   position: relative;
   top: 0px;
 }
-.reviews__wrap .slick-dots li {
+.slick-dots li {
   padding: 0;
   margin: 0;
   width: 12px;
   height: 12px;
 }
-.reviews__wrap .slick-dots li:not(:last-child) {
+.slick-dots li:not(:last-child) {
   margin-right: 18px;
 }
-.reviews__wrap .slick-dots li button:before {
+.slick-dots li button:before {
   display: none;
 }
 
-.reviews__wrap .slick-dots li button {
+.slick-dots li button {
   display: block;
   width: 12px;
   height: 12px;
@@ -156,6 +155,6 @@
   background-color: #d9d9d9;
   margin: 0;
 }
-.reviews__wrap .slick-dots li :hover {
+.slick-dots li :hover {
   background-color: #c7133e;
 }
