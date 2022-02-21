@@ -1,6 +1,7 @@
-.section-background {
+.section__background {
   margin-left: auto;
   margin-right: auto;
+
   background-image: linear-gradient(to bottom, #ffffff 84px, #fff5f6 84px);
 
   @media screen and (min-width: 768px) {
@@ -22,21 +23,20 @@
 }
 .locations-container {
   padding: 0 50px;
+  // margin-left: auto;
+  //  margin-right: auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
   @media screen and (min-width: 768px) {
     width: 768px;
     padding: 0 36px;
   }
   @media screen and (min-width: 1280px) {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
-
 .locations {
   @media screen and (min-width: 768px) {
     width: 100%px;
@@ -199,6 +199,10 @@
     @media screen and (min-width: 1280px) {
       font-size: 16px;
     }
+  }
+  &__link:hover,
+  &__link:focus {
+    color: #c7133e;
   }
 }
 .btn-locations-wrap {
