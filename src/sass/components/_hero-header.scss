@@ -1,5 +1,9 @@
-.section__hero * {
-  outline: 1px solid tomato;
+// .section__hero * {
+//   outline: 1px solid tomato;
+// }
+
+html {
+  scroll-behavior: smooth;
 }
 
 .section__hero {
@@ -11,6 +15,10 @@
   overflow: hidden;
   padding-top: 6px;
   padding-bottom: 160px;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 38px;
@@ -527,7 +535,7 @@
   right: 34px;
   width: 168px;
   height: 133px;
-  z-index: 1;
+  z-index: 2;
 
   @media screen and (min-width: 1280px) {
     bottom: 0;
@@ -573,6 +581,11 @@
   transform: translateX(0);
 }
 
+.mob-menu.is-open ~ .header__button-burger,
+.mob-menu.is-open ~ .hero__button-buy {
+  display: none;
+}
+
 .menu-close-btn {
   position: absolute;
   top: 23.26px;
@@ -604,15 +617,57 @@
   }
 }
 
-.navigation {
-}
-
-.nav-mob {
-}
-
 .nav-mob__item {
   &:not(:last-child) {
     margin-bottom: 23px;
+  }
+}
+
+.nav-mob__item {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -20px;
+    display: block;
+    max-width: 480px;
+    width: 100vw;
+    height: 1px;
+    background-color: #e18298;
+
+    @media screen and (min-width: 480px) {
+      left: 0;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      left: -24px;
+      width: 100vw;
+    }
+  }
+
+  &:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: -20px;
+    display: block;
+    max-width: 480px;
+    width: 100vw;
+    height: 1px;
+    background-color: #e18298;
+
+    @media screen and (min-width: 480px) {
+      left: 0;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      left: -24px;
+      width: 100vw;
+    }
   }
 }
 

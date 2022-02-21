@@ -1,6 +1,37 @@
 <section class="section section__hero">
   <div class="container container__hero">
     <header class="header">
+      <!-- Mobile menu -->
+      <div class="mob-menu js-menu-container" id="mobile-menu">
+        <div class="mob-menu__container">
+          <button type="button" class="menu-close-btn js-close-menu">
+            <svg class="menu-close-btn__icon" width="16" height="16">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <button class="hero__button-buy hero__button-buy--mob" type="button" data-hero-modal-open>
+            Buy now
+            <svg class="hero__icon-buy" width="7px" height="10px">
+              <use href="./images/sprite.svg#icon-buy-icon-arrow"></use>
+            </svg>
+          </button>
+          <nav class="navigation">
+            <ul class="nav-mob">
+              <li class="nav-mob__item">
+                <a href="#" class="nav-mob__link nav-mob__link--other-color">Home</a>
+              </li>
+              <li class="nav-mob__item"><a href="#about-us" class="nav-mob__link">About us</a></li>
+              <li class="nav-mob__item">
+                <a href="#how-its-made" class="nav-mob__link">How it's made?</a>
+              </li>
+              <li class="nav-mob__item">
+                <a href="#our-products" class="nav-mob__link">Our products</a>
+              </li>
+              <li class="nav-mob__item"><a href="#contact" class="nav-mob__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <a href="#" class="header__logo">
         <img
           srcset="
@@ -38,44 +69,12 @@
           <use href="./images/sprite.svg#icon-burger-icon"></use>
         </svg>
       </button>
-      <button class="hero__button-buy" type="button">
+      <button class="hero__button-buy" type="button" data-hero-modal-open>
         Buy now
         <svg class="hero__icon-buy" width="7px" height="10px">
           <use href="./images/sprite.svg#icon-buy-icon-arrow"></use>
         </svg>
       </button>
-
-      <!-- Mobile menu -->
-      <div class="mob-menu js-menu-container" id="mobile-menu">
-        <div class="mob-menu__container">
-          <button type="button" class="menu-close-btn js-close-menu">
-            <svg class="menu-close-btn__icon" width="16" height="16">
-              <use href="./images/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <button class="hero__button-buy hero__button-buy--mob" type="button">
-            Buy now
-            <svg class="hero__icon-buy" width="7px" height="10px">
-              <use href="./images/sprite.svg#icon-buy-icon-arrow"></use>
-            </svg>
-          </button>
-          <nav class="navigation">
-            <ul class="nav-mob">
-              <li class="nav-mob__item">
-                <a href="#" class="nav-mob__link nav-mob__link--other-color">Home</a>
-              </li>
-              <li class="nav-mob__item"><a href="#about-us" class="nav-mob__link">About us</a></li>
-              <li class="nav-mob__item">
-                <a href="#how-its-made" class="nav-mob__link">How it's made?</a>
-              </li>
-              <li class="nav-mob__item">
-                <a href="#our-products" class="nav-mob__link">Our products</a>
-              </li>
-              <li class="nav-mob__item"><a href="#contact" class="nav-mob__link">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </header>
     <div class="hero__wrapper">
       <div class="hero__title-wrap">
@@ -140,7 +139,10 @@
         media="(min-width: 320px)"
       />
       <img
+        data-aos="zoom-in"
+        data-aos-delay="300"
         class="hero__img-ellipse"
+        data-aos-duration="800"
         src="./images/hero-header/hero-ellipse-desk-1x.png"
         alt="ellipse"
       />
@@ -169,6 +171,9 @@
         media="(min-width: 320px)"
       />
       <img
+        data-aos="zoom-out-down"
+        data-aos-delay="900"
+        data-aos-duration="800"
         class="hero__img-icecream"
         src="./images/hero-header/hero-icecream-desk-1x.png"
         alt="icecream"
@@ -191,6 +196,9 @@
         media="(min-width: 768px)"
       />
       <img
+        data-aos-duration="800"
+        data-aos-delay="1800"
+        data-aos="fade-up-right"
         src="./images/hero-header/hero-milk-desk-1x.png"
         alt="jug of milk"
         class="hero__img-milk"
@@ -214,6 +222,9 @@
         media="(min-width: 768px)"
       />
       <img
+        data-aos-duration="800"
+        data-aos-delay="1200"
+        data-aos="fade-up-left"
         src="./images/hero-header/hero-girl-desk-1x.png"
         alt="girl with ice-cream"
         class="hero__img-girl"
