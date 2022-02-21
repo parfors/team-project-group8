@@ -1,17 +1,4 @@
-.backdrop-hero-modal {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 6;
-  transition: opacity 600ms, visibility 600ms;
-  @media screen and (max-width: 479px) {
-    padding: 15px;
-  }
-}
-
-.backdrop-hero-modal.is-hidden .modal {
+.backdrop.is-hidden .hero-modal {
   transform: scale(0.2) rotate(70deg);
 }
 
@@ -40,7 +27,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--primeri-text-color);
+  background: var(--accent-color);
   color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
