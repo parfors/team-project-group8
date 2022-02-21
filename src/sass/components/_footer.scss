@@ -151,7 +151,7 @@ color: #D41443;
     }
 }
 
-.section {
+.container__footer {
     // padding-bottom: 43px;
     display: block;
     @media screen and (min-width: 768px) {
@@ -163,11 +163,11 @@ color: #D41443;
         justify-content: space-between;
     }
 }
-
-.container__footer {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+// ----замінить---
+// .container__footer {
+//     padding-left: 15px;
+//     padding-right: 15px;
+// }
 
 .footer__allcontacts {
     width: 100%;
