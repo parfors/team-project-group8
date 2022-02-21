@@ -418,13 +418,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .container__gallery {
-    padding: 0 68px;
+    padding: 0 76px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container__gallery {
-    padding: 0, 132px;
+    padding: 0 133px;
   }
 }
 

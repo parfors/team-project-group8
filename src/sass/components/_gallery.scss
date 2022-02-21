@@ -1,27 +1,19 @@
 .gallery {
   width: 100%;
   height: 100%;
-  // 122px;
   background-image: linear-gradient(
     to bottom,
     var(--background-color) 40%,
     var(--primeri-text-color) 40%
   );
-
-  // @include tablet {
-  //   height: 264px;
-  // }
-  // @include desktop {
-  //   height: 430px;
-  // }
 }
 
 .container__gallery {
   padding: 0 10px 0 20px;
   @include tablet {
-    padding: 0 68px;
+    padding: 0 76px;
   }
   @include desktop {
-    padding: 0, 132px;
+    padding: 0 133px;
   }
 }
