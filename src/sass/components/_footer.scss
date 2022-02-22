@@ -45,10 +45,12 @@ display: flex;
 flex-wrap: wrap;
 justify-content: flex-end;
     @media screen and (min-width: 768px) {
-    font-weight: 700;
     font-size: 14px;
     line-height: 186%;
     letter-spacing: 0.02em;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
     }
 }
 
@@ -57,7 +59,7 @@ justify-content: flex-end;
 }
 
 .end {
-    padding-top: 20px;
+    padding-top: 22px;
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
@@ -68,21 +70,27 @@ justify-content: flex-end;
         letter-spacing: 0.02em;
         width: 150px;
     }
+    @media screen and(min-width: 768px) {
+        padding-top: 29px;
+    }
     @media screen and (min-width: 1280px) {
-        font-weight: 700;
+        padding-top: 9px;
         font-size: 14px;
         line-height: 186%;
-        letter-spacing: 0.02em;
         color: #907E82;
     }
 }
 
 
 .section__pretitle--position {
-    margin-bottom: 16px;
+    font-weight: 400;
     text-align: start;
+    letter-spacing: 0.04em;
     @media screen and (min-width: 480px) {
         margin-bottom: 17px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 16px;
     }
     @media screen and (min-width: 1280px) {
         margin-bottom: 15px;
@@ -121,11 +129,10 @@ justify-content: flex-end;
     }
 }
 
-
 .social__link {
     width: 34px;
     height: 34px;
-    background-color: #FFA5BA;
+    background-color:#FFA5BA;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +141,7 @@ justify-content: flex-end;
     &:focus {
         background-color: #D41443;
     }
-}
+} 
 
 .social__icon {
     fill: #ffffff;
