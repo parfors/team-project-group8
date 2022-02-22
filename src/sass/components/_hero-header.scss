@@ -16,9 +16,9 @@ html {
   padding-top: 6px;
   padding-bottom: 160px;
 
-  @media screen and (max-width: 479px) {
-    width: 100%;
-  }
+  // @media screen and (max-width: 479px) {
+  //   width: 100%;
+  // }
 
   @media screen and (min-width: 768px) {
     padding-top: 38px;
@@ -80,9 +80,9 @@ html {
   font-size: 16px;
   line-height: 1.31;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 
   color: #ffffff;
 
@@ -239,7 +239,6 @@ html {
   width: 61.2px;
   height: 24px;
 
-  font-weight: normal;
   font-size: 8px;
   line-height: 1.25;
   display: flex;
@@ -362,7 +361,6 @@ html {
 
 .stores-list__number {
   font-family: var(--secondary-font-family);
-  font-weight: normal;
   font-size: 28px;
   line-height: 1.14;
   text-align: right;
@@ -378,7 +376,6 @@ html {
 }
 
 .stores-list__text {
-  font-weight: normal;
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
@@ -395,6 +392,7 @@ html {
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) {
     position: relative;
     left: 120px;
@@ -411,8 +409,6 @@ html {
 .hero__text {
   margin-bottom: 7px;
 
-  font-family: DM Sans;
-  font-weight: normal;
   font-size: 8px;
   line-height: 1.5;
 
@@ -675,8 +671,8 @@ html {
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
+  display: block;
+  // align-items: center;
 
   color: #ffffff;
 }
