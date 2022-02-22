@@ -1,7 +1,6 @@
 .social {
     display: flex;
     justify-content: flex-end;
-    // margin-top: 43px;
     @media screen and (min-width: 768px) {
         margin-top: 0;
     }
@@ -18,8 +17,6 @@
 @media screen and(min-width: 480px) {
     padding-bottom: 25px;
 }
-
-// padding-bottom: 43px;
 background-color: #FFF5F6;
 @media screen and (min-width: 768px) {
     padding-bottom: 18px;
@@ -38,18 +35,16 @@ ul {
 }
 
 .telephone {
-    display: block;
-    margin-top: 46px;
-    margin-right: 0px;
-    color: black;
-    @media screen and (max-width: 480px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
+font-weight: 700;
+font-size: 12px;
+line-height: 186%;
+text-align: right;
+margin-top: 46px;
+color: black;
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-end;
     @media screen and (min-width: 768px) {
-    // display: flex;
-    // justify-content: flex-end;
     font-weight: 700;
     font-size: 14px;
     line-height: 186%;
@@ -63,11 +58,14 @@ ul {
 
 .end {
     padding-top: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 152%;
     text-align: center;
-    // margin-top: 65px;
     color: #907E82;
     @media screen and (max-width: 480px) {
         margin: 0 auto;
+        letter-spacing: 0.02em;
         width: 150px;
     }
     @media screen and (min-width: 1280px) {
@@ -83,27 +81,26 @@ ul {
 .section__pretitle--position {
     margin-bottom: 16px;
     text-align: start;
+    @media screen and (min-width: 480px) {
+        margin-bottom: 17px;
+    }
     @media screen and (min-width: 1280px) {
         margin-bottom: 15px;
     }
 }
 
 .section__title--position {
+    margin-bottom: 0px;
     text-align: start;
 }
 
 .section__title--padding {
-    @media screen and (min-width: 480px) {
-        width: 234px;
-    }
-    // margin-bottom: 43px;
+    max-width: 232px;
     @media screen and (min-width: 768px) {
-        width: 100%;
-        margin-bottom: 0;
+        min-width: 340px;
     }
     @media screen and (min-width: 1280px) {
-        width: 100%;
-        margin-bottom: 0;
+        min-width: 478px;
     }
 }
 
@@ -113,25 +110,13 @@ ul {
         display: flex;
         justify-content: space-between;
     }
-    @media screen and (min-width: 1280px) {
-        justify-content: space-between;
-    }
-    
 }
-
-// .container__footer {
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
 
 .footer__allcontacts {
     width: 100%;
     margin-top: 43px;
     text-align: end;
     @media screen and(min-width: 768px) {
-        margin-top: 0;
-    }
-    @media screen and (min-width: 1280px) {
         margin-top: 0;
     }
 }
