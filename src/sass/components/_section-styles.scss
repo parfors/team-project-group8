@@ -41,3 +41,15 @@
     @include font(58px, null, 1.14, 0.06em);
   }
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 11;
+  @media screen and (max-width: 479px) {
+    padding: 15px;
+  }
+}

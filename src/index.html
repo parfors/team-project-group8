@@ -33,14 +33,16 @@
     />
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/hero-header.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/advanteges.html"></include>
-    <include src="./partials/gallery.html"></include>
-    <include src="./partials/customer-reviews.html"></include>
-    <include src="./partials/contacts.html"></include>
+    <main>
+      <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+      <include src="./partials/hero-header.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/advanteges.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/customer-reviews.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
     <include src="./partials/footer.html"></include>
     <include src="./partials/additional/hero-modal.html"></include>
     <include src="./partials/additional/product-card.html"></include>
@@ -62,20 +64,13 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script>
-      $('.reviews').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        arrows: false,
-        dots: true,
-      });
-    </script>
+    <script src="js/slik-slider.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="./js/hero-modal.js"></script>
+    <script src="./js/about-modal.js"></script>
+    <script src="./js/contacts-modal.js"></script>
   </body>
 </html>
