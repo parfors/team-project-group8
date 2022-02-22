@@ -1,23 +1,17 @@
-.backdrop-about{
+.backdrop-about {
   z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
- 
- background-image:url(../images/about-modal/cow.png),url(../images/about-modal/fruit.png) ,linear-gradient(  rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2));
-   background-repeat: no-repeat;
-  background-size: 25vw,25vw,100vw;
-  background-position: top left,bottom right, center;
-
-
-
+  background-image: url(../images/about-modal/cow.png), url(../images/about-modal/fruit.png),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-repeat: no-repeat;
+  background-size: 25vw, 25vw, 100vw;
+  background-position: top left, bottom right, center;
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-
+   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-about.is-hidden {
@@ -26,41 +20,37 @@
   pointer-events: none;
 }
 
-.backdrop-about.is-hidden .modal {
-  transform: scale(0.75);
+.backdrop-about.is-hidden .modal-about {
+  transform: scale(0.2);
 }
 .modal-about {
-   position: absolute;
-top:25vh;
-left:25vw ;
-right:25vw ;
-bottom:25vh;
-padding: 15px;
-  border-radius: 4px;
-  background-color:#E17992;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+  right: 25vw;
+  bottom: 25vh;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--background-color);
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   background-repeat: no-repeat;
   background-size: contain;
-overflow-y: auto;
- 
+  overflow-y: auto;
 }
-.modal-about{
-    &__title{
-      text-align: center;
-color: white;
-font-size: 25px;
-
-    }
-    &__text{
-color: white;
-font-size:15px;
-
-    }
+.modal-about {
+  &__title {
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 25px;
+  }
+  &__text {
+    color: #E17992;
+    font-size: 15px;
+  }
 }
-
 
 .modal-about-close {
   position: absolute;
@@ -69,13 +59,17 @@ font-size:15px;
 
   width: 30px;
   height: 30px;
-  background-color: #d41443;
-  color: white;
+  background-color:#E17992;
+  color: var(--primeri-text-color);
   border-radius: 50%;
 
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   cursor: pointer;
+   &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
 }

@@ -27,7 +27,7 @@
   margin-bottom: 29px;
 }
 .wrap-text {
-   padding: 43px 66px 26px 66px;
+   padding: 43px 66px 26px 57px;
   background-color: #fafafa;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
@@ -112,7 +112,7 @@
   justify-content: center;
   font-size: 10px;
   line-height: 4px;
-  color: #c7133e;
+  color: var(--accent-color);
   margin-bottom: 18px;
 
   @media screen and (min-width: 768px) {
@@ -156,5 +156,5 @@
   margin: 0;
 }
 .slick-dots li :hover {
-  background-color: #c7133e;
+  background-color: var(--accent-color);
 }

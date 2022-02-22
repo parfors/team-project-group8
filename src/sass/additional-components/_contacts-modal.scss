@@ -1,0 +1,50 @@
+.contacts-modal .hero-modal__close--position {
+  top: 15px;
+  right: 20px;
+}
+.map__wrap {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+  overflow: scroll;
+  @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.frame__wrap {
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #ffffff;
+  border-radius: 4px;
+  height: auto;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  max-width: 350px;
+  height: auto;
+  @include tablet {
+    max-width: 550px;
+    height: 320px;
+  }
+  @include desktop {
+    width: 400px;
+    height: 420px;
+  }
+}
+.map__frame {
+  display: block;
+}
+.locations__text--alignment {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--background-color);
+  width: 150px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 4px;
+}
