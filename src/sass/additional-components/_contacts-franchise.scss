@@ -24,6 +24,7 @@ position: fixed;
     opacity: 0;
 }
  .leabe__form{
+   text-align: center;
       display: block;
       margin-bottom:15px;
       color: white;
@@ -31,7 +32,7 @@ position: fixed;
      
   }
 .form {
-
+z-index: 100;
   position: relative;
  width:100vw;
   height: 100vh;
@@ -39,6 +40,14 @@ position: fixed;
   padding: 15px ;
   border-radius: 24px;
   overflow-y: auto;
+  @media screen and(min-width:480px){
+    width: 320px;
+    height: auto;
+    top: 10vh;
+    left: 25vw;
+    right: 25vw;
+    bottom: 10vh;
+  }
   select {
       width: 100%;
     background-color: transparent;
@@ -72,19 +81,19 @@ margin-top: 15px;
 .reset {
   margin-right: 25px;
   padding: 10px ;
-  // margin-right: 25px;
   color: white;
   background-color:red;
   outline: 1px solid #D41443;
 }
 .btn-form-close{
-  position: fixed;
+  position: absolute;
   right: 18px;
   top: 18px;
 
   display:inline-block;
-  background-color: red;
+  background-color: #D41443;
   color: white;
+  border-radius: 22px;
   padding: 5px;
 
 }
