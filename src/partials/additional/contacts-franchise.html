@@ -1,0 +1,49 @@
+
+    <div class="page" id="page">
+        <a href="#wrap__form">open</a>
+    </div>
+
+    <div class="wrap__form" id="wrap__form">
+
+        <form class="form" id="form">
+            <label class="leabe__form" for="form">Franchise</label>
+            <a class="btn-form-close" href="#page"> close</a>
+            <select id="type" name="type">
+                <option value="" selected>Type</option>
+                <option value="cafe">cafe</option>
+                <option value="food-track">food truck</option>
+                <option value="shop">shop</option>
+                <option value="other">other</option>
+            </select>
+            <select id="sizel" name="size">
+                <option value="" selected>Size</option>
+                <option value="small">small (max15m2)</option>
+                <option value="medium">medium(max25m2)</option>
+                <option value="normal">normal(max50m2)</option>
+                <option value="large">large(max250m2)</option>
+                <option value="other">other</option>
+            </select>
+            <select id="location" name="location">
+                <option value="" selected>Location</option>
+                <option value="ny">NY</option>
+                <option value="la">Los Angeles</option>
+                <option value="chicago">Chicago</option>
+                <option value="other">other</option>
+            </select>
+
+        <b class="form__title">Leave your details, we will contact you</b>
+
+        <label class="form__field">
+            <span class="form__label">name</span>
+            <input class="form__input" type="text" name="name" />
+        </label>
+        <label class="form__field"><span class="form__label">phone</span>
+            <input class="form__input" type="tel" name="tel" />
+        </label>
+        <label class="form__field"><span class="form__label">post</span>
+            <input class="form__input" type="email" name="email" />
+        </label>
+            <button class="form-btn reset" type="reset" form="form">Reset</button>
+            <button class="form-btn" type="submit" form="form">Submit</button>
+        </form>
+    </div>
