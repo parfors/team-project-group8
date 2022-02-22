@@ -1,52 +1,37 @@
-.section-background {
-  background: linear-gradient(to bottom, #ffffff 84px, #fff5f6 84px);
-
-  @media screen and (min-width: 768px) {
-    background: linear-gradient(to bottom, #ffffff 78px, #fff5f6 78px);
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 1900px;
-    // // height: 382px;
-    // // padding-top: 102px;
-    background: linear-gradient(to bottom, #ffffff 102px, #fff5f6 102px)
-      url(../images/img-contacts/contacts-bg-1x.jpg);
-
-    // background-position: 0 102px;
-    background-repeat: no-repeat;
-    //
-  }
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.locations-container {
-  padding: 0 50px;
+.section__background {
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+
+  background-image: linear-gradient(to bottom, #ffffff 84px, #fff5f6 84px);
+
   @media screen and (min-width: 768px) {
-    width: 768px;
+    background-image: linear-gradient(to bottom, #ffffff 78px, #fff5f6 78px);
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1920px;
+    background-position: 0 102px;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/img-contacts/contacts-bg-desc-1x.png),
+      linear-gradient(to bottom, #ffffff 1px, #fff5f6 1px);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/img-contacts/contacts-bg-desc-2x.png),
+        linear-gradient(to bottom, #ffffff 1px, #fff5f6 1px);
+    }
+  }
+}
+.locations-container {
+  padding: 0 50px;
+
+  @media screen and (min-width: 768px) {
+    // width: 768px;
     padding: 0 36px;
   }
   @media screen and (min-width: 1280px) {
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
-
 .locations {
   @media screen and (min-width: 768px) {
     width: 100%px;
@@ -129,8 +114,6 @@
   }
 
   &__text-description {
-    display: block;
-    width: 100%;
     font-family: var(--primary-font-family);
     font-style: normal;
     font-weight: 500;
@@ -140,7 +123,6 @@
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.66;
-      // padding-bottom: 25px;
     }
     @media screen and (min-width: 1280px) {
       font-size: 16px;
@@ -210,6 +192,10 @@
       font-size: 16px;
     }
   }
+  &__link:hover,
+  &__link:focus {
+    color: #c7133e;
+  }
 }
 .btn-locations-wrap {
   margin-top: 54px;
@@ -238,9 +224,8 @@
   font-size: 16px;
   line-height: 1.31;
   color: #ffffff;
-
   &:hover {
-    background: var(--accent-color);
+    background: #c7133e;
   }
   @media screen and (min-width: 768px) {
     width: 191px;
@@ -281,4 +266,11 @@
     width: 180px;
     margin-left: 7.5px;
   }
+}
+.btn-locations__icon {
+  fill: #c2e297;
+  margin-left: 14px;
+}
+.btn-Franchise__icon {
+  margin-left: 14px;
 }
