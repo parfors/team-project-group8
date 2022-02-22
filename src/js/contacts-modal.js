@@ -1,14 +1,14 @@
 (() => {
     const refs = {
-      openModalBtn: document.querySelector('[data-contacts-modal-open]'),
-      closeModalBtn: document.querySelector('[data-contacts-modal-close]'),
+      openContactModalBtn: document.querySelector('[data-contacts-modal-open]'),
+      closeContactModalBtn: document.querySelector('[data-contacts-modal-close]'),
       modal: document.querySelector('[data-contacts-modal]'),
     };
   
-    refs.openModalBtn.addEventListener('click', toggleModal);
-    refs.closeModalBtn.addEventListener('click', toggleModal);
+    refs.openContactModalBtn.addEventListener('click', toggleContactModal);
+    refs.closeContactModalBtn.addEventListener('click', toggleContactModal);
   
-    function toggleModal() {
+    function toggleContactModal() {
       refs.modal.classList.toggle('is-hidden');
     }
   })();
