@@ -630,8 +630,7 @@ html {
     display: block;
     width: 250px;
     height: 1px;
-    background-color: #fff;
-    // background-color: #e18298;
+    background-color: #e18298;
 
     @media screen and (min-width: 768px) {
       width: 254px;
@@ -646,8 +645,7 @@ html {
     display: block;
     width: 250px;
     height: 1px;
-    background-color: #fff;
-    // background-color: #e18298;
+    background-color: #e18298;
 
     @media screen and (min-width: 768px) {
       left: -20px;
@@ -699,7 +697,7 @@ html {
   }
 
   &:hover {
-    background-color: #e18298;
+    background-color: rgba(225, 130, 152, 0.5);
   }
 }
 

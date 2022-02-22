@@ -24,3 +24,12 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+// Закрывает мобильное меню при клике в сторону
+
+// $(document).mouseup(function (e) {
+//   var container = $('.mob-menu');
+//   if (container.has(e.target).length === 0) {
+//     $('.mob-menu').removeClass('is-open');
+//   }
+// });
