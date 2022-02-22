@@ -1,0 +1,234 @@
+.backdrop.is-hidden .hero-modal {
+  transform: scale(0.2) rotate(70deg);
+}
+
+.hero-modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  transition: transform 500ms;
+
+  width: 100%;
+  height: 100%;
+  background-color: #fff5f6;
+  border-radius: 20px;
+  padding: 15px;
+  overflow: auto;
+
+  @include mobile {
+    width: 430px;
+    height: 580px;
+  }
+  @include tablet {
+    width: 490px;
+    height: 580px;
+    padding: 30px;
+  }
+  @include desktop {
+    width: 550px;
+    height: 600px;
+    padding: 40px;
+  }
+}
+
+.hero-modal__close {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background:  #E17992;
+  color: var(--primeri-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  transition-property: background;
+  transition-duration: 300ms;
+  transition-timing-function: var(--transition-function);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
+}
+
+.hero-modal__icons {
+  fill: var(--primeri-text-color);
+}
+
+.hero-modal__title {
+  font-family: var(--secondary-font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+
+  @include mobile {
+    font-size: 24px;
+  }
+}
+
+.hero-modal__comments {
+  margin-bottom: 20px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.hero-modal__form {
+  margin-bottom: 10px;
+}
+
+.hero-modal__form-flex {
+  display: flex;
+}
+
+.hero-form-field {
+  flex-basis: 50%;
+}
+
+.hero-form-field + .hero-form-field {
+  margin-left: 10px;
+}
+
+.hero-form-text {
+  width: 100%;
+  height: 80px;
+  display: block;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.01em;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 6px;
+  padding: 10px;
+  resize: none;
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 300ms;
+  transition-timing-function: var(--transition-function);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  @include desktop {
+    font-size: 10px;
+    line-height: calc(14 / 10);
+  }
+}
+
+.hero-form-text--size {
+  height: 50px;
+}
+
+.hero-form-field__text {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.02em;
+  color: #e17992;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hero-form-field__wrap {
+  position: relative;
+}
+
+.number-product,
+.hero-form-field__input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 10px;
+  color: #000000;
+  outline: none;
+  transition-property: border-color;
+  transition-duration: 300ms;
+  transition-timing-function: var(--transition-function);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.hero-modal-btn {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 0.04em;
+
+  width: 160px;
+  height: 44px;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--primeri-text-color);
+  background: #E17992;
+
+  border-radius: 22px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  position: relative;
+  transition-property: background;
+  transition-duration: 300ms;
+  transition-timing-function: var(--transition-function);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
+}
+
+.hero-form-field--flex {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.product__text {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  margin-bottom: 6px;
+
+  font-size: 16px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  // margin-bottom: 4px;
+}
+
+.select-product {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.number-product {
+  width: 50px;
+  height: 24px;
+  margin-bottom: 6px;
+}
+
+.product__text:last-child,
+.number-product:last-child {
+  margin-bottom: 0;
+}
