@@ -9,6 +9,7 @@
     refs.closeContactModalBtn.addEventListener('click', toggleContactModal);
   
     function toggleContactModal() {
+
       refs.modal.classList.toggle('is-hidden');
     }
   })();
