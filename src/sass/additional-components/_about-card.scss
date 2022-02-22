@@ -29,7 +29,7 @@
   left: 25vw;
   right: 25vw;
   bottom: 25vh;
-  padding: 15px;
+  padding: 0 15px 25px;
   border-radius: 20px;
   background-color: var(--background-color);
   transform: scale(1);
@@ -40,22 +40,38 @@
   background-size: contain;
   overflow-y: auto;
 }
+.modal-about__header{
+  position: sticky;
+  top:0;
+  left: 0;
+margin-bottom: 20px;
+}
 .modal-about {
   &__title {
+    padding: 15px 30px 5px;
     text-align: center;
     color: var(--accent-color);
+ 
     font-size: 25px;
+    background:var(--background-color);
+ 
   }
   &__text {
-    color: #E17992;
+    color:var(--accent-color);
+    background-color:FFB8CA;
+    border-radius: 5px;
+    padding: 5px;
     font-size: 15px;
+  &+&{
+    margin-top: 15px;
+  }
   }
 }
 
 .modal-about-close {
-  position: absolute;
-  right: 5px;
-  top: 5px;
+position: absolute;
+  right: 15px;
+  top: 15px;
 
   width: 30px;
   height: 30px;
