@@ -1,31 +1,29 @@
 .about-background {
   background-image: url('../images/about/cow-mob-1x.png');
   background-repeat: no-repeat;
-  width: 280px;
+  background-size: contain;
+  max-width: 280px;
   height: 280px;
   margin: 0 auto 46px auto;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/about/cow-mob-2x.png');
-    background-size: contain;
   }
   @include tablet {
     background-image: url('../images/about/cow-tab-1x.png');
-    width: 340px;
+    min-width: 340px;
     height: 340px;
     margin: 0 17px 0 0;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/about/cow-tab-2x.png');
-      background-size: contain;
     }
   }
   @include desktop {
     background-image: url('../images/about/cow-desk-1x.png');
-    width: 516px;
+    min-width: 516px;
     height: 516px;
     margin: 0 74px 0 0;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/about/cow-desk-2x.png');
-      background-size: contain;
     }
   }
 }
@@ -165,7 +163,4 @@
 .about__icon {
   margin-left: 15px;
   fill: var(--accent-color);
-  .about__button:hover & {
-    fill: var(--primeri-text-color);
-  }
 }
