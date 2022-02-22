@@ -1,4 +1,4 @@
-.section__background {
+.section-location {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 113px;
@@ -49,6 +49,7 @@
     &__item:last-child {
       margin-bottom: 0;
     }
+
     @media screen and (min-width: 768px) {
       width: calc(100% / 3 - 20px);
       margin-left: 20px;
@@ -278,7 +279,6 @@
   }
 }
 .btn-locations__icon {
-  fill: #c2e297;
   margin-left: 14px;
 }
 .btn-Franchise__icon {
