@@ -43,6 +43,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
+  cursor: pointer;
   top: 6px;
   right: 6px;
   transition-property: background;
@@ -182,6 +183,7 @@
   background: #E17992;
 
   border-radius: 22px;
+  cursor: pointer;
 
   margin-left: auto;
   margin-right: auto;
