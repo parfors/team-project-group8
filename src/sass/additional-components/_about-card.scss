@@ -25,10 +25,10 @@
 }
 .modal-about {
   position: absolute;
-  top: 25vh;
-  left: 25vw;
-  right: 25vw;
-  bottom: 25vh;
+  top: 20vh;
+  left: 5vw;
+  right: 5vw;
+  bottom: 10vh;
   padding: 0 15px 25px;
   border-radius: 20px;
   background-color: var(--background-color);
@@ -39,6 +39,18 @@
   background-repeat: no-repeat;
   background-size: contain;
   overflow-y: auto;
+  @media screen and (min-width:480px){
+    top:25vh ;
+    bottom:20vh ;
+  }
+    @media screen and (min-width:768px){
+    left:20vw ;
+    right:20vw ;
+  }
+    @media screen and (min-width:1280px){
+    left:25vw ;
+    right:25vw ;
+  }
 }
 .modal-about__header{
   position: sticky;
