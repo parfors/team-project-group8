@@ -11,7 +11,7 @@
   background-size: 20vw, 20vw, 100vw;
   background-position: top left, bottom right, center;
   opacity: 1;
-   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-about.is-hidden {
@@ -34,60 +34,59 @@
   background-color: var(--background-color);
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background-repeat: no-repeat;
   background-size: contain;
-  overflow-y: auto;
-  @media screen and (min-width:480px){
-    top:25vh ;
-    bottom:20vh ;
+  overflow: auto;
+  @media screen and (min-width: 480px) {
+    top: 25vh;
+    bottom: 20vh;
   }
-    @media screen and (min-width:768px){
-    left:20vw ;
-    right:20vw ;
+  @media screen and (min-width: 768px) {
+    left: 20vw;
+    right: 20vw;
   }
-    @media screen and (min-width:1280px){
-    left:25vw ;
-    right:25vw ;
+  @media screen and (min-width: 1280px) {
+    left: 25vw;
+    right: 25vw;
   }
 }
-.modal-about__header{
+.modal-about__header {
   position: sticky;
-  top:0;
+  top: 0;
   left: 0;
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .modal-about {
   &__title {
     padding: 15px 30px 5px;
     text-align: left;
     color: var(--accent-color);
- 
+
     font-size: 25px;
-    background:var(--background-color);
- 
+    background: var(--background-color);
   }
   &__text {
-    color:var(--accent-color);
-    background-color:FFB8CA;
+    color: var(--accent-color);
+    background-color: FFB8CA;
     border-radius: 5px;
     padding: 5px;
     font-size: 15px;
-  &+&{
-    margin-top: 15px;
-  }
+    & + & {
+      margin-top: 15px;
+    }
   }
 }
 
 .modal-about-close {
-position: absolute;
+  position: absolute;
   right: 15px;
   top: 15px;
 
   width: 30px;
   height: 30px;
-  background-color:#E17992;
+  background-color: #e17992;
   color: var(--primeri-text-color);
   border-radius: 50%;
 
@@ -96,7 +95,7 @@ position: absolute;
   justify-content: center;
   border: none;
   cursor: pointer;
-   &:hover,
+  &:hover,
   &:focus {
     background: var(--accent-color);
   }
