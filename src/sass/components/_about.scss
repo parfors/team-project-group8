@@ -1,31 +1,29 @@
 .about-background {
   background-image: url('../images/about/cow-mob-1x.png');
   background-repeat: no-repeat;
-  width: 280px;
+  background-size: contain;
+  max-width: 280px;
   height: 280px;
   margin: 0 auto 46px auto;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/about/cow-mob-2x.png');
-    background-size: contain;
   }
   @include tablet {
     background-image: url('../images/about/cow-tab-1x.png');
-    width: 340px;
+    min-width: 340px;
     height: 340px;
     margin: 0 17px 0 0;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/about/cow-tab-2x.png');
-      background-size: contain;
     }
   }
   @include desktop {
     background-image: url('../images/about/cow-desk-1x.png');
-    width: 516px;
+    min-width: 516px;
     height: 516px;
     margin: 0 74px 0 0;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/about/cow-desk-2x.png');
-      background-size: contain;
     }
   }
 }
@@ -85,16 +83,15 @@
   }
 }
 .about__wrapper {
-  margin: 0 50px;
+  padding-left: 50px;
+  padding-right: 50px;
   @include tablet {
-    margin: 0;
     width: 340px;
-    padding-top: 40px;
+    padding: 40px 0 0 0;
   }
   @include desktop {
-    margin: 0;
     width: 463px;
-    padding-top: 50px;
+    padding: 50px 0 0 0;
   }
 }
 .about__description {
@@ -153,18 +150,17 @@
   background: var(--primeri-text-color);
   border-radius: 22px;
 
+  cursor: pointer;
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    color: var(--primeri-text-color);
-    background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--button-hover-bg-color);
   }
 }
 .about__icon {
   margin-left: 15px;
   fill: var(--accent-color);
-  .about__button:hover & {
-    fill: var(--primeri-text-color);
-  }
 }

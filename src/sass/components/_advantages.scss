@@ -8,34 +8,37 @@
   }
 }
 
-.container-advantage--padding {
-  padding-right: 70px;
+// .container-advantage--padding {
+//   padding-right: 70px;
 
-  @include tablet {
-    padding-right: 74px;
-  }
+//   @include tablet {
+//     padding-right: 74px;
+//   }
 
-  @include desktop {
-    padding-right: 115px;
-  }
-}
+//   @include desktop {
+//     padding-right: 115px;
+//   }
+// }
 
 .advantage {
-  margin-bottom: -38px;
+  max-width: 230px;
 
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    min-width: 100%;
+    // margin-bottom: -38px;
     margin-left: -60px;
   }
   @include desktop {
     margin-left: -30px;
   }
+  @media screen and (max-wdith: 480px) and (min-width: 1200px) {
+    padding-right: 40px;
+  }
 }
 
 .advantage__item {
-  margin-bottom: 38px;
-
   @include tablet {
     flex-basis: calc(100% / 3 - 60px);
     margin-left: 60px;
@@ -47,9 +50,14 @@
   }
 }
 
+.advantage__item:not(:last-child) {
+  margin-bottom: 38px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
 .advantage__title {
-  position: relative;
-  padding-top: 66px;
   margin-bottom: 13px;
 
   font-family: var(--secondary-font-family);
@@ -60,10 +68,8 @@
 
   @include tablet {
     @include font(48px, null, null, null);
-    padding-top: 86px;
   }
   @include desktop {
-    padding-top: 90px;
     margin-bottom: 15px;
     @include font(58px, null, null, null);
   }
@@ -86,19 +92,17 @@
 .advantage__title--fruit::before,
 .advantage__title--health::before {
   content: '';
-  position: absolute;
   top: 0;
-  left: 0;
-  // display: block;
-  // margin-bottom: 16px;
+  display: block;
+  margin-bottom: 16px;
 
-  // @include tablet {
-  //   margin-bottom: 36px;
-  // }
+  @include tablet {
+    margin-bottom: 36px;
+  }
 
-  // @include desktop {
-  //   margin-bottom: 40px;
-  // }
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .advantage__title--milk::before {

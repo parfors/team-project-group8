@@ -1,20 +1,18 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-hero-modal-open]'),
-    openModal2Btn: document.querySelector('[data-hero-mob-modal-open]'),
-    closeModalBtn: document.querySelector('[data-hero-modal-close]'),
-    modal: document.querySelector('[data-hero-modal]'),
-  };
+    const refs = {
+      openHeroModalBtn: document.querySelector('[data-hero-modal-open]'),
+      openHeroModalBtn2: document.querySelector('[data-hero-mob-modal-open]'),
+      closeHeroModalBtn: document.querySelector('[data-hero-modal-close]'),
+      modal: document.querySelector('[data-hero-modal]'),
+    };
+  
+  refs.openHeroModalBtn.addEventListener('click', toggleHeroModal);
+  refs.openHeroModalBtn2.addEventListener('click', toggleHeroModal);
+    refs.closeHeroModalBtn.addEventListener('click', toggleHeroModal);
+   
+      function toggleHeroModal() {
+      refs.modal.classList.toggle('is-hidden');
+      }
+  
+  })();
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.openModal2Btn.addEventListener('click', toggleModal2);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-
-  function toggleModal2() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-})();
