@@ -1,20 +1,34 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-hero-modal-open]'),
-    openModal2Btn: document.querySelector('[data-hero-mob-modal-open]'),
-    closeModalBtn: document.querySelector('[data-hero-modal-close]'),
-    modal: document.querySelector('[data-hero-modal]'),
+  const mobileMenu = document.querySelector('[data-hero-modal]');
+  const openMenuBtn = document.querySelector('[data-hero-modal-open]');
+  const openMenuBtn2 = document.querySelector('[data-hero-mob-modal-open]');
+  const closeMenuBtn = document.querySelector('[data-hero-modal-close]');
+
+
+  const toggleMenu = () => {
+  const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+    
+    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+    openMenuBtn2.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-hidden');
+
+    const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.openModal2Btn.addEventListener('click', toggleModal2);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  openMenuBtn.addEventListener('click', toggleMenu);
+  openMenuBtn2.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
-  }
-
-  function toggleModal2() {
-    refs.modal.classList.toggle('is-hidden');
-  }
+  // Закрываем мобильное меню на более широких экранах
+  // в случае изменения ориентации устройства.
+  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+    if (!e.matches) return;
+    mobileMenu.classList.remove('is-hidden');
+    openMenuBtn.setAttribute('aria-expanded', false);
+    openMenuBtn2.setAttribute('aria-expanded', false);
+    bodyScrollLock.enableBodyScroll(document.body);
+  });
 })();
+
+

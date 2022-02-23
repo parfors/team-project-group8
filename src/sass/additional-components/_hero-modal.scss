@@ -16,6 +16,14 @@
   padding: 15px;
   overflow: auto;
 
+  @media screen and (max-height: 600px) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(1) rotate(0deg);
+    transition: transform 500ms;
+     overflow: auto;
+  }
+
   @include mobile {
     width: 430px;
     height: 580px;
