@@ -547,12 +547,12 @@ html {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 250px;
   height: 100%;
   background-color: #e17992;
   padding: 60px 20px;
   z-index: 10;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
   transform: translateX(100%);
   transition: transform 300ms ease-in-out;
@@ -628,19 +628,12 @@ html {
     top: -12px;
     left: -20px;
     display: block;
-    max-width: 480px;
-    width: 100vw;
+    width: 250px;
     height: 1px;
     background-color: #e18298;
 
-    @media screen and (min-width: 480px) {
-      left: 0;
-      width: 100%;
-    }
-
     @media screen and (min-width: 768px) {
-      left: -24px;
-      width: 100vw;
+      width: 254px;
     }
   }
 
@@ -650,19 +643,13 @@ html {
     bottom: -12px;
     left: -20px;
     display: block;
-    max-width: 480px;
-    width: 100vw;
+    width: 250px;
     height: 1px;
     background-color: #e18298;
 
-    @media screen and (min-width: 480px) {
-      left: 0;
-      width: 100%;
-    }
-
     @media screen and (min-width: 768px) {
-      left: -24px;
-      width: 100vw;
+      left: -20px;
+      width: 254px;
     }
   }
 }
@@ -679,4 +666,47 @@ html {
 
 .nav-mob__link--other-color {
   color: var(--accent-color);
+}
+
+.scrollup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+
+  display: none;
+  z-index: 4;
+
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--accent-color);
+  border-radius: 50%;
+
+  transition: background-color 300ms var(--transition-function);
+
+  @media screen and (min-width: 768px) {
+    width: 55px;
+    height: 55px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 70px;
+    height: 70px;
+  }
+
+  &:hover {
+    background-color: rgba(225, 130, 152, 0.5);
+  }
+}
+
+.scrollup__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  fill: currentColor;
 }
